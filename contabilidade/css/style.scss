@@ -7,6 +7,12 @@ $branco: #fff;
 $cinza: #5e5a52;
 $verde: #12a612;
 
+@mixin upTo501px {
+	@media (min-width: 501px){
+		@content;
+	}
+}
+
 /* Configurações css geral */
 html,body{
 	font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
@@ -16,6 +22,7 @@ html,body{
 .container{
 	width: 100%;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 
@@ -116,6 +123,11 @@ header{
 		p {
 			line-height: 1.1em;
 			margin-top: 10px;
+
+			@include upTo501px {
+				width: 100%;
+				font-size: 1.2em;
+			}
 		}
 
 		a {
@@ -131,6 +143,8 @@ header{
 			&.ft_button {background: $verde;}
 
 			&:hover {color: $branco;}
+
+			@include upTo501px {padding: 15px;}
 		}
 	}
 }
@@ -164,6 +178,8 @@ header{
 			margin: 15% auto 0;
 			text-align: center;
 			box-sizing: border-box;
+
+			@include upTo501px {width: 50%;}
 
 			img {width: 120px;}
 
@@ -285,6 +301,8 @@ header{
 					font-size: 1.3em;
 					line-height: 1.2em;
 					text-align: left;
+
+					@include upTo501px {height: 140px;}
 				}
 			}
 		}
@@ -316,6 +334,8 @@ header{
 	border-radius: 15px;
 	background: $azul;
 	margin: 15% auto;
+
+	@include upTo501px {margin: 50px auto;}
 }
 
 /* formulario  */
@@ -336,6 +356,11 @@ header{
 .formulario {
 	margin: 5% 2% 0 2%;
 
+	@include upTo501px {
+		width: 500px;
+		margin: 0 auto;
+	}
+
 	.container{
 		h1 {
 			font-size: 1.8em;
@@ -347,10 +372,14 @@ header{
 		form{
 			margin-top: 5%;
 
+			@include upTo501px {text-align: center;}
+
 			input, textarea{
 				width: 97%;
 				border: 1px solid #444;
 				border-radius: 5px;
+
+				@include upTo501px {width: 92%;}
 			}
 
 			input {
@@ -363,6 +392,8 @@ header{
 				width: 97%;
 				padding: 3% 0 0 2%;
 				margin: 5% 0 0;
+
+				@include upTo501px {width: 92%;}
 			}
 
 			.button_form {
@@ -388,6 +419,13 @@ header{
 
 .redes_sociais {
 	margin: 20% 2%; 
+
+	@include upTo501px {
+		width: 400px;
+		margin: 0 auto;
+		height: 100%;
+		display: block;
+	}
 
 	.container {
 
@@ -480,7 +518,7 @@ footer {
 			width: 185px;
 			margin-top: 30px;
 
-			//no 501px, colocar mg-top: 10px;
+			@include upTo501px{margin-top: 10px;}
 
 			.social_media {
 				display: inline-block;

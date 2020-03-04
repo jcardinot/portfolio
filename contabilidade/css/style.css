@@ -6,7 +6,8 @@ html, body {
 
 .container {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
 
 /* header */
 header {
@@ -80,6 +81,10 @@ header {
     header .cta_wrapper p {
       line-height: 1.1em;
       margin-top: 10px; }
+      @media (min-width: 501px) {
+        header .cta_wrapper p {
+          width: 100%;
+          font-size: 1.2em; } }
     header .cta_wrapper a {
       color: #ffc75a;
       display: inline-block;
@@ -93,6 +98,9 @@ header {
         background: #12a612; }
       header .cta_wrapper a:hover {
         color: #fff; }
+      @media (min-width: 501px) {
+        header .cta_wrapper a {
+          padding: 15px; } }
 
 /* serviços */
 .servicos_intro {
@@ -115,6 +123,9 @@ header {
     margin: 15% auto 0;
     text-align: center;
     box-sizing: border-box; }
+    @media (min-width: 501px) {
+      .servicos_home .servicos_wrapper .card {
+        width: 50%; } }
     .servicos_home .servicos_wrapper .card img {
       width: 120px; }
     .servicos_home .servicos_wrapper .card h4 {
@@ -204,6 +215,9 @@ header {
           font-size: 1.3em;
           line-height: 1.2em;
           text-align: left; }
+          @media (min-width: 501px) {
+            .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv p {
+              height: 140px; } }
     .oferecemos_depoimentos_wrapper .depoimentos_wrapper .slide_wrapper {
       width: 100%;
       margin: 15px auto;
@@ -224,6 +238,9 @@ header {
   border-radius: 15px;
   background: #094ccc;
   margin: 15% auto; }
+  @media (min-width: 501px) {
+    .divisoria {
+      margin: 50px auto; } }
 
 /* formulario  */
 .contato {
@@ -238,6 +255,10 @@ header {
 
 .formulario {
   margin: 5% 2% 0 2%; }
+  @media (min-width: 501px) {
+    .formulario {
+      width: 500px;
+      margin: 0 auto; } }
   .formulario .container h1 {
     font-size: 1.8em;
     font-weight: bold;
@@ -245,10 +266,16 @@ header {
     color: #5e5a52; }
   .formulario .container form {
     margin-top: 5%; }
+    @media (min-width: 501px) {
+      .formulario .container form {
+        text-align: center; } }
     .formulario .container form input, .formulario .container form textarea {
       width: 97%;
       border: 1px solid #444;
       border-radius: 5px; }
+      @media (min-width: 501px) {
+        .formulario .container form input, .formulario .container form textarea {
+          width: 92%; } }
     .formulario .container form input {
       margin: 5% 0;
       padding: 3% 0 3% 2%; }
@@ -257,6 +284,9 @@ header {
       width: 97%;
       padding: 3% 0 0 2%;
       margin: 5% 0 0; }
+      @media (min-width: 501px) {
+        .formulario .container form textarea {
+          width: 92%; } }
     .formulario .container form .button_form {
       margin: 30px auto;
       display: block;
@@ -275,6 +305,12 @@ header {
 /* redes sociais */
 .redes_sociais {
   margin: 20% 2%; }
+  @media (min-width: 501px) {
+    .redes_sociais {
+      width: 400px;
+      margin: 0 auto;
+      height: 100%;
+      display: block; } }
   .redes_sociais .container h1 {
     font-size: 1.5em;
     font-weight: bold;
@@ -335,6 +371,9 @@ footer {
     footer .container .contatos_footer {
       width: 185px;
       margin-top: 30px; }
+      @media (min-width: 501px) {
+        footer .container .contatos_footer {
+          margin-top: 10px; } }
       footer .container .contatos_footer .social_media {
         display: inline-block;
         margin-left: 7%; }
