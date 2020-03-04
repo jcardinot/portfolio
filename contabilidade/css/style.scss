@@ -25,6 +25,12 @@ $verde: #12a612;
 	}
 }
 
+@mixin upTo901px {
+	@media (min-width: 901px){
+		@content;
+	}
+}
+
 /* Configurações css geral */
 html,body{
 	font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
@@ -287,6 +293,11 @@ header{
 		padding: 3% 0 30px;
 		width: 100%;
 
+		@include upTo901px {
+			width: 50%;
+			box-sizing: border-box;
+		}
+
 		.oferecemos{
 
 			h2 {
@@ -313,6 +324,11 @@ header{
 		width: 100%;
 		padding: 3% 1%;
 		box-sizing: border-box;
+
+		@include upTo901px {
+			width: 50%;
+			padding: 3% 10px 0;
+		}
 
 		.depoimentos{
 			width: 100%;
