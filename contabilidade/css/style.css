@@ -40,17 +40,26 @@ header {
         height: 5px;
         display: inline-block;
         background: #094ccc; }
+      @media (min-width: 801px) {
+        header .container label {
+          display: none; } }
     header .container input {
       display: none; }
       header .container input:checked + .menu_mobile {
         display: block;
         transition: all 1s ease-in-out; }
+      @media (min-width: 801px) {
+        header .container input {
+          display: none; } }
     header .container .menu_mobile {
       display: none;
       position: relative;
       top: 15%;
       background: black;
       width: 100%; }
+      @media (min-width: 801px) {
+        header .container .menu_mobile {
+          display: none; } }
       header .container .menu_mobile a {
         display: block;
         background: #094ccc;
@@ -67,6 +76,19 @@ header {
           color: #094ccc; }
     header .container .menu_desktop {
       display: none; }
+      @media (min-width: 801px) {
+        header .container .menu_desktop {
+          display: inline-block;
+          vertical-align: bottom; }
+          header .container .menu_desktop ul a {
+            display: inline-block;
+            margin-left: 20px; }
+            header .container .menu_desktop ul a li {
+              font-weight: bold;
+              color: #094ccc;
+              padding: 20px; }
+              header .container .menu_desktop ul a li:hover {
+                color: #fff; } }
   header .cta_wrapper {
     width: calc(100% - 20px);
     height: 100%;
@@ -140,6 +162,9 @@ header {
     @media (min-width: 501px) {
       .servicos_home .servicos_wrapper .card {
         width: 50%; } }
+    @media (min-width: 801px) {
+      .servicos_home .servicos_wrapper .card {
+        width: 33%; } }
     .servicos_home .servicos_wrapper .card img {
       width: 120px; }
     .servicos_home .servicos_wrapper .card h4 {
