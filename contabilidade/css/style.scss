@@ -31,6 +31,12 @@ $verde: #12a612;
 	}
 }
 
+@mixin upTo1001px {
+	@media (min-width: 1001px){
+		@content;
+	}
+}
+
 /* Configurações css geral */
 html,body{
 	font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
@@ -50,6 +56,8 @@ header{
 	width: 100%;
 	background: url('../img/banner_600x400.jpg') no-repeat;
 	background-size: cover;
+
+	@include upTo1001px {height: 550px;}
 
 	.container{
 		display: flex;
@@ -163,6 +171,14 @@ header{
 
 		@include upTo601px {padding: 0 10px;}
 
+		@include upTo1001px {
+			width: auto;
+			text-align: center;
+			margin: 150px auto;
+			padding: 0;
+			background-color: transparent;
+		}
+
 		h1 {
 			font-size: 1.5em;
 			font-weight: bold;
@@ -172,6 +188,8 @@ header{
 				font-size: 2em;
 				margin-top: 10px;
 			}
+
+			@include upTo1001px {font-size: 3em;}
 		}
 
 		p {
@@ -186,6 +204,14 @@ header{
 			@include upTo601px {
 				line-height: 1.6em;
 				margin-top: 15px;
+			}
+
+			@include upTo1001px {
+				width: 700px;
+				text-align: center;
+				color: $branco;
+				font-weight: bold;
+				font-size: 1.3em;
 			}
 		}
 
@@ -244,6 +270,8 @@ header{
 
 			@include upTo801px {width: 33%;}
 
+			@include upTo1001px {margin-top: 70px;}
+
 			img {width: 120px;}
 
 			h4 {
@@ -298,7 +326,14 @@ header{
 			box-sizing: border-box;
 		}
 
+		@include upTo1001px {
+			display: flex;
+			justify-content: flex-end;
+		}
+
 		.oferecemos{
+
+			@include upTo1001px {width: 500px;}
 
 			h2 {
 				font-weight: bold;
@@ -411,12 +446,19 @@ header{
 	margin: 15% auto;
 
 	@include upTo501px {margin: 50px auto;}
+
+	@include upTo1001px {display: none;}
 }
 
 /* formulario  */
 
 .contato {
 	position: relative;
+
+	@include upTo1001px {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 
 	h1 {
 		color: $cinza;
@@ -425,6 +467,14 @@ header{
 		font-size: 1.5em;
 		line-height: 1.1em;
 		font-weight: bold;
+	}
+
+	.contato_wrapper {
+
+		@include upTo1001px {
+			display: flex;
+			flex-flow: row wrap;
+		}
 	}
 }
 
@@ -530,8 +580,17 @@ header{
 .localizacao {
 
 	@include upTo601px {
-		width: 500px;
+		width: 400px;
 		margin: 0 auto;
+		height: 100%;
+		display: block;
+	}
+
+	@include upTo1001px {
+		position: absolute;
+		top: 350px;
+		left: 570px;
+		height: auto;
 	}
 
 	.container {
@@ -549,7 +608,7 @@ header{
 		.map {
 			height: 300px;
 			background: url('../img/rsz_maps_460x300.png') no-repeat;
-			margin: 10px auto 0;
+			margin: 10% auto 0;
 			background-size: cover;
 		}
 
@@ -567,6 +626,8 @@ header{
 footer {
 	margin-top: 50px;
 	background: $azul;
+
+	@include upTo1001px {margin-top: 150px;}
 
 	.container {
 		color: $branco;
