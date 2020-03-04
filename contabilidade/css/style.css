@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Configurações css geral */
+html, body {
+  font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
