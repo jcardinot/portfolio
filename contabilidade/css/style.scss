@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+// Configurações scss
+$azul: #094ccc;
+$amarelo: #ffc75a;
+$branco: #fff;
+$cinza: #5e5a52;
+$verde: #12a612;
+
 /* Configurações css geral */
 html,body{
 	font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
@@ -9,4 +16,121 @@ html,body{
 .container{
 	width: 100%;
 	margin: 0 auto;
+}
+
+
+/* header */
+
+header{
+	width: 100%;
+	background: url('../img/banner_600x400.jpg') no-repeat;
+	background-size: cover;
+
+	.container{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		.logo {
+			width: 110px;
+			height: 40px;
+			display: inline-block;
+			margin: 10px 0 10px 10px;
+
+			img {width: 100%;}
+		}
+
+		label {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			text-align: center;
+			position: absolute;
+			top: 0.5%;
+			right: 1%;
+			cursor: pointer;
+			
+			.menu_barra {
+				width: 40px;
+				height: 5px;
+				display: inline-block;
+				background: $azul;
+			}
+		}
+
+		input {
+			display: none;
+
+			&:checked + .menu_mobile{
+				display: block;
+				transition: all 1s ease-in-out;
+			}
+		}
+
+		.menu_mobile {
+			display: none;
+			position: relative;
+			top: 15%;
+			background: black;
+			width: 100%;
+
+			a {
+				display: block;
+				background: $azul;
+				text-align: center;
+				padding: 15px 0;
+				border-bottom: 1px solid $branco;
+				color: $amarelo;
+
+				li {font-weight: bold;}
+				
+				&:last-child {border-bottom: none;}
+
+				&:hover {
+					background: $branco;
+					color: $azul;
+				}
+			}
+		}
+
+		.menu_desktop {display: none;}
+	}
+
+
+	/* chamada_banner */
+
+	.cta_wrapper {
+		width: calc(100% - 20px);
+		height: 100%;
+		background: rgba(0,0,0,0.6);
+		margin-top: 30vh;
+		padding: 5% 10px 0 10px;
+		color: $branco;
+
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		p {
+			line-height: 1.1em;
+			margin-top: 10px;
+		}
+
+		a {
+			color: $amarelo;
+			display: inline-block;
+			margin-top: 5%;
+			padding: 4% 5%;
+			font-size: 1.2em;
+			font-weight: bold;
+			border-radius: 5px;
+			margin-bottom: 10px;
+
+			&.ft_button {background: $verde;}
+
+			&:hover {color: $branco;}
+		}
+	}
 }
