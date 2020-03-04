@@ -94,4 +94,52 @@ header {
       header .cta_wrapper a:hover {
         color: #fff; }
 
+/* serviços */
+.servicos_intro {
+  width: 100%;
+  margin-top: 20px; }
+  .servicos_intro h1 {
+    color: #094ccc;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin-top: 50px;
+    text-align: center; }
+
+.servicos_home .servicos_wrapper {
+  margin-top: 0;
+  display: flex;
+  flex-flow: row wrap; }
+  .servicos_home .servicos_wrapper .card {
+    width: 100%;
+    margin: 15% auto 0;
+    text-align: center;
+    box-sizing: border-box; }
+    .servicos_home .servicos_wrapper .card img {
+      width: 120px; }
+    .servicos_home .servicos_wrapper .card h4 {
+      margin-top: 5%;
+      font-size: 1.3em;
+      font-weight: bold; }
+    .servicos_home .servicos_wrapper .card p {
+      margin: 5% 0;
+      line-height: 1.2em; }
+
+.cta_contador {
+  width: 230px;
+  padding: 4% 0;
+  margin: 30px auto 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #094ccc;
+  color: #ffc75a;
+  display: block;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1em;
+  cursor: pointer; }
+  .cta_contador:hover {
+    background: #12a612; }
+
 /*# sourceMappingURL=style.css.map */
