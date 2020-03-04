@@ -198,3 +198,111 @@ header{
 
 	&:hover {background: $verde;}
 }
+
+
+/* vantagens */
+
+.oferecemos_depoimentos_wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 50px 0 0;
+
+	.oferecemos_wrapper {
+		background: $cinza;
+		padding: 3% 0 30px;
+		width: 100%;
+
+		.oferecemos{
+
+			h2 {
+				font-weight: bold;
+				font-size: 1.8em;
+				line-height: 1.4em;
+				margin: 2% 0;
+				text-align: center;
+				color: $branco;
+			}
+
+			li {
+				margin: 4% 10px 0;
+				color: $branco;
+				line-height: 1.2em;
+			}
+		}
+	}
+
+/* depoimentos */
+
+	.depoimentos_wrapper {
+		background: $azul;
+		width: 100%;
+		padding: 3% 1%;
+		box-sizing: border-box;
+
+		.depoimentos{
+			width: 100%;
+
+			h1 {
+				font-weight: bold;
+				font-size: 1.8em;
+				line-height: 1.4em;
+				text-align: center;
+				color: $branco;
+				margin-top: 2%;
+				width: 100%;
+				word-break: break;
+			}
+
+			.depoimento_indv {	
+				color: $branco;
+				transition: all 1s ease-out;
+
+				img {
+					width: 60px;
+					height: 50px;
+					background: blue;
+					display: block;
+					margin: 40px auto 10px; 
+					border-radius: 50%;
+					box-sizing: border-box;
+				}
+
+				.nome_cliente, .cargo_cliente {
+					display: block;
+					text-align: center;
+					font-size: 1.3em;
+					line-height: 1em;
+				}
+
+				.nome_cliente {
+					font-weight: bold;
+					margin-bottom: 7px;
+				}
+
+				p {
+					height: 230px;
+					margin: 20px 0 0 10px;
+					font-size: 1.3em;
+					line-height: 1.2em;
+					text-align: left;
+				}
+			}
+		}
+
+		.slide_wrapper {
+			width: 100%;
+			margin: 15px auto;
+			text-align: center;
+
+			.depmt {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				background: $cinza;
+				margin-left: 10px;
+				cursor: unset;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -142,4 +142,79 @@ header {
   .cta_contador:hover {
     background: #12a612; }
 
+/* vantagens */
+.oferecemos_depoimentos_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 0 0;
+  /* depoimentos */ }
+  .oferecemos_depoimentos_wrapper .oferecemos_wrapper {
+    background: #5e5a52;
+    padding: 3% 0 30px;
+    width: 100%; }
+    .oferecemos_depoimentos_wrapper .oferecemos_wrapper .oferecemos h2 {
+      font-weight: bold;
+      font-size: 1.8em;
+      line-height: 1.4em;
+      margin: 2% 0;
+      text-align: center;
+      color: #fff; }
+    .oferecemos_depoimentos_wrapper .oferecemos_wrapper .oferecemos li {
+      margin: 4% 10px 0;
+      color: #fff;
+      line-height: 1.2em; }
+  .oferecemos_depoimentos_wrapper .depoimentos_wrapper {
+    background: #094ccc;
+    width: 100%;
+    padding: 3% 1%;
+    box-sizing: border-box; }
+    .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos {
+      width: 100%; }
+      .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos h1 {
+        font-weight: bold;
+        font-size: 1.8em;
+        line-height: 1.4em;
+        text-align: center;
+        color: #fff;
+        margin-top: 2%;
+        width: 100%;
+        word-break: break; }
+      .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv {
+        color: #fff;
+        transition: all 1s ease-out; }
+        .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv img {
+          width: 60px;
+          height: 50px;
+          background: blue;
+          display: block;
+          margin: 40px auto 10px;
+          border-radius: 50%;
+          box-sizing: border-box; }
+        .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv .nome_cliente, .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv .cargo_cliente {
+          display: block;
+          text-align: center;
+          font-size: 1.3em;
+          line-height: 1em; }
+        .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv .nome_cliente {
+          font-weight: bold;
+          margin-bottom: 7px; }
+        .oferecemos_depoimentos_wrapper .depoimentos_wrapper .depoimentos .depoimento_indv p {
+          height: 230px;
+          margin: 20px 0 0 10px;
+          font-size: 1.3em;
+          line-height: 1.2em;
+          text-align: left; }
+    .oferecemos_depoimentos_wrapper .depoimentos_wrapper .slide_wrapper {
+      width: 100%;
+      margin: 15px auto;
+      text-align: center; }
+      .oferecemos_depoimentos_wrapper .depoimentos_wrapper .slide_wrapper .depmt {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #5e5a52;
+        margin-left: 10px;
+        cursor: unset;
+        border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */
