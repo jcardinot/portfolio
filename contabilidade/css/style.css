@@ -74,10 +74,17 @@ header {
     margin-top: 30vh;
     padding: 5% 10px 0 10px;
     color: #fff; }
+    @media (min-width: 601px) {
+      header .cta_wrapper {
+        padding: 0 10px; } }
     header .cta_wrapper h1 {
       font-size: 1.5em;
       font-weight: bold;
       text-align: left; }
+      @media (min-width: 601px) {
+        header .cta_wrapper h1 {
+          font-size: 2em;
+          margin-top: 10px; } }
     header .cta_wrapper p {
       line-height: 1.1em;
       margin-top: 10px; }
@@ -85,6 +92,10 @@ header {
         header .cta_wrapper p {
           width: 100%;
           font-size: 1.2em; } }
+      @media (min-width: 601px) {
+        header .cta_wrapper p {
+          line-height: 1.6em;
+          margin-top: 15px; } }
     header .cta_wrapper a {
       color: #ffc75a;
       display: inline-block;
@@ -101,6 +112,9 @@ header {
       @media (min-width: 501px) {
         header .cta_wrapper a {
           padding: 15px; } }
+      @media (min-width: 601px) {
+        header .cta_wrapper a {
+          margin-top: 15px; } }
 
 /* serviços */
 .servicos_intro {
@@ -152,6 +166,9 @@ header {
   cursor: pointer; }
   .cta_contador:hover {
     background: #12a612; }
+  @media (min-width: 601px) {
+    .cta_contador {
+      padding: 15px 0; } }
 
 /* vantagens */
 .oferecemos_depoimentos_wrapper {
@@ -326,6 +343,10 @@ header {
       height: 90px; }
 
 /* localização */
+@media (min-width: 601px) {
+  .localizacao {
+    width: 500px;
+    margin: 0 auto; } }
 .localizacao .container {
   width: 100%;
   text-align: center; }

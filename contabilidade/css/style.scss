@@ -13,6 +13,12 @@ $verde: #12a612;
 	}
 }
 
+@mixin upTo601px {
+	@media (min-width: 601px){
+		@content;
+	}
+}
+
 /* Configurações css geral */
 html,body{
 	font-family: 'Montserrat', 'Helvetica', 'Verdana', sans-serif;
@@ -114,10 +120,17 @@ header{
 		padding: 5% 10px 0 10px;
 		color: $branco;
 
+		@include upTo601px {padding: 0 10px;}
+
 		h1 {
 			font-size: 1.5em;
 			font-weight: bold;
 			text-align: left;
+
+			@include upTo601px {
+				font-size: 2em;
+				margin-top: 10px;
+			}
 		}
 
 		p {
@@ -127,6 +140,11 @@ header{
 			@include upTo501px {
 				width: 100%;
 				font-size: 1.2em;
+			}
+
+			@include upTo601px {
+				line-height: 1.6em;
+				margin-top: 15px;
 			}
 		}
 
@@ -145,6 +163,8 @@ header{
 			&:hover {color: $branco;}
 
 			@include upTo501px {padding: 15px;}
+
+			@include upTo601px {margin-top: 15px;}
 		}
 	}
 }
@@ -213,6 +233,8 @@ header{
 	cursor: pointer;
 
 	&:hover {background: $verde;}
+
+	@include upTo601px {padding: 15px 0;}
 }
 
 
@@ -453,6 +475,11 @@ header{
 /* localização */
 
 .localizacao {
+
+	@include upTo601px {
+		width: 500px;
+		margin: 0 auto;
+	}
 
 	.container {
 		width: 100%;
